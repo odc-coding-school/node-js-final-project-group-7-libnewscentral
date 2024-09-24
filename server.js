@@ -56,7 +56,7 @@ app.set('layout', 'layouts/base'); // Points to views/layouts/base.ejs
 app.set('views', [__dirname + '/views', __dirname + '/admin']);
 
 // Set up multer for file uploads
-const storage = multer.diskStorage({
+const storage = mult er.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'public/uploads'); // Directory to store uploaded images
     },
